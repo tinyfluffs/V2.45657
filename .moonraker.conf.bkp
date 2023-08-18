@@ -66,3 +66,10 @@ path = /home/tinyfluffs/klipper_z_calibration
 origin = https://github.com/protoloft/klipper_z_calibration.git
 managed_services = klipper
 
+[update_manager ercf-happy_hare]
+type = git_repo
+path = ~/ERCF-Software-V3
+origin = https://github.com/moggieuk/ERCF-Software-V3.git
+install_script = install.sh
+managed_services = klipper
+
