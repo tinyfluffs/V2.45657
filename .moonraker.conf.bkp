@@ -20,6 +20,7 @@ cors_domains =
 	*://localhost:*
 	*://my.mainsail.xyz
 	*://app.fluidd.xyz
+	*://porter.local
 
 [octoprint_compat]
 
@@ -60,22 +61,9 @@ primary_branch = main
 managed_services = sonar
 install_script = tools/install.sh
 
-[update_manager z_calibration]
-type = git_repo
-path = /home/tinyfluffs/klipper_z_calibration
-origin = https://github.com/protoloft/klipper_z_calibration.git
-managed_services = klipper
-
 [update_manager canboot]
 type = git_repo
 origin = https://github.com/Arksine/CanBoot.git
 path = ~/CanBoot
 is_system_service = False
-
-[update_manager ercf-happy_hare]
-type = git_repo
-path = ~/ERCF-Software-V3
-origin = https://github.com/moggieuk/ERCF-Software-V3.git
-install_script = install.sh
-managed_services = klipper
 
