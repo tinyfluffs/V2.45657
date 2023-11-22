@@ -61,9 +61,9 @@ primary_branch = main
 managed_services = sonar
 install_script = tools/install.sh
 
-[update_manager canboot]
+[update_manager Katapult]
 type = git_repo
-origin = https://github.com/Arksine/CanBoot.git
-path = ~/CanBoot
+path = ~/katapult
+origin = https://github.com/Arksine/katapult.git
 is_system_service = False
 
